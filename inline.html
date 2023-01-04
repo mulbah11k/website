@@ -3,22 +3,72 @@
 <head>
 <meta charset="utf-8">
 <title>Inline Elements </title>
+<style>
+	body{
+		background-color: #ffe4c4;
+		margin: 40px;
+	}
+	section{
+		background-color: #fff8dc;
+		padding: 20px;
+	}
+	h1, footer {
+		text-align: center;
+	}
+	footer {
+		margin-top: 20px;
+	}
+	a:link, a:visited{
+		color: #000;
+		text-decoration: none;
+	}
+	b {
+		color: #800000;	
+	}
+	strong {
+		color: #d2691e;
+	}
+	.bk {
+		color: #ff0000;
+		left: 75px;
+		top: 93.874px;
+		font-family: serif;
+		transform: scaleX(0.763674);
+}
+	}
+	.gk {
+		color: #6b00cf;
+}
+.bl {
+	color: rgba(255, 2, 221, 0.945);
+}
+.mk {
+	color: rgb(57, 110, 255);
+}
+.vk {
+ color: rgb(0, 255, 0);
+}
+
+
+</style>
 </head>
 <body>
 	<!-- content start below here -->
 	<h1>Inline Elements</h1>
-	<p>Inline elements are used to markup texr inside a block element like a paragraph or division.
-	Each element dose different things to the text. <b>This text is in a strong element. This text is in a bold (b) element.</b> Bold and strong seem to have the same effect.
-	<em>This is emphasised (em) text</em>. <i>It seems to look the same as this italicized text here.</i></p>
+	<section><p>Inline elements are used to markup texr inside a block element like a paragraph or division.
+	Each element dose different things to the text. <strong>This text is in a strong element.</strong> <b>This text is in a bold (b) element.</b> Bold and strong seem to have the same effect.
+	<em class="bl">This is emphasised (em) text</em>. <i class="gk">It seems to look the same as this italicized text here.</i></p>
 	<p>Putting text inside quote elements, "like this quoted text here", makes the text display with
 		quotation marks around it. Code (code) tags are meant for source code examples. They look
-		like <sub>code text here.</sub> The keyboard element (knd) looks the same, <sub>keyboard text here,</sub> but is meant for examples of user entered data.
+		like <sub class="yk">code text here.</sub> The keyboard element (knd) looks the same, <sub class="mk">keyboard text here,</sub> but is meant for examples of user entered data.
 	</p>
-	<p>Superscript and subscript elements do what they say. <sup>this is superscript</sup> and <sub>this is subscript.</sub></p>
-	<p>Span element don't seem to do anything at all. I've put about every other inside span tags. Can you tell which is which?</p>
+	<p>Superscript and subscript elements do what they say. <sup class="bk">this is superscript</sup> and <sub class="vk">this is subscript.</sub></p>
+	<p>Span element don't seem to do anything at all. I've put about every other inside span tags. Can you tell which is which?</p></section>
 	<footer style="text-align: center;">
 		<a href="http://validator.w3.org/check/referer">
 		<strong> HTML </strong> Valid! </a>
+		<a href="https://jigsaw.w3.org/css-validator/">
+			<strong>CSS</strong> Valid! </a>
 		</footer>	
 	<!-- content ends above here -->
 
