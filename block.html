@@ -3,12 +3,52 @@
 <head>
 <meta charset="utf-8">
 <title>Block-level Elements </title>
+<style>
+	body{
+		margin: 40px;
+		padding: 40px;
+		background-color: #BE5;
+		border: 2px dashed #573;
+	}
+	.h1, footer{
+		text-align: center;
+	}
+	 p, pre{
+		margin-left: 15px;
+	}
+	.first{
+		background-color: #ff9;
+		border: 2px dotted #000;
+	}
+	.second{
+		background-color: #cf9;
+		border: 2px dotted #880;
+	}
+	#first {
+		color: #373;
+	}
+	#second {
+		color: #040;
+	}
+	a:link, a:visited{
+		font-weight: bold;
+		color: #000;
+		text-decoration: none;
+	}
+	a:hover, a:active{
+		color: #ff0;
+	}
+	a:active{
+		font-size: xx-large;
+	}
+
+</style>
 </head>
 <body>
 	<!-- content start below here -->
 	<h1>Block-level Elements</h1>
-	<h2>Text in a Preformatted Elements</h2>
-	<pre>This             text
+	<h2 id="first">Text in a Preformatted Elements</h2>
+	<pre class="first">This             text
 
         spans              several
    lines
@@ -17,13 +57,13 @@
   of         extra              
 
 whitespace.</pre>
-<p>The Preformatted element keeps the spaces between words the way they are written in the text.</p>
-<h2>Same Text in a Paragraph Elements</h2>
+<p> The Preformatted element keeps the spaces between words the way they are written in the text.</p>
+<h2 id="second">Same Text in a Paragraph Elements</h2>
 <p>This text spans several lines and has lots of extra whitespace.</p>
 <p>The paragraph element ignores all the spaces between words.
 	It only puts one space regardless of how many are in the source text.
 </p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elitm sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+<div class="second" ><p>Lorem ipsum dolor sit amet, consectetur adipisicing elitm sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
 commodo consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse cillum dolore eu fugiat
 nulla pariatur. Exceptrur sint occaecat cuupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
@@ -32,7 +72,7 @@ id ext laborum. </p>
 	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
 commodo consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse cillum dolore eu fugiat
 nulla pariatur. Exceptrur sint occaecat cuupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
-id ext laborum. </p>
+id ext laborum. </p></div>
 <p>The two paragraphs anove are inside a division element. There was no visible change to the page from
 	putting the paragraphs in the division.
 </p>
